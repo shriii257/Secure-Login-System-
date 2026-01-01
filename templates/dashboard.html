@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Secure Login System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard-box">
+            <div class="dashboard-header">
+                <h1>Dashboard</h1>
+                <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+            </div>
+            
+            <!-- Flash messages -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            
+            <div class="welcome-section">
+                <h2>Welcome, {{ username }}! 👋</h2>
+                <p>You have successfully logged into your secure account.</p>
+            </div>
+            
+            <div class="info-cards">
+                <div class="info-card">
+                    <h3>🔒 Security Status</h3>
+                    <p class="status-active">Active Session</p>
+                    <small>Your session will expire after 30 minutes of inactivity</small>
+                </div>
+                
+                <div class="info-card">
+                    <h3>👤 Account Info</h3>
+                    <p><strong>Username:</strong> {{ username }}</p>
+                    <small>Logged in successfully</small>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🛡️ Security Features</h3>
+                    <ul class="feature-list">
+                        <li>Password hashing (PBKDF2-SHA256)</li>
+                        <li>Session-based authentication</li>
+                        <li>Login attempt limiting</li>
+                        <li>SQL injection protection</li>
+                        <li>Session timeout (30 minutes)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="action-section">
+                <h3>Quick Actions</h3>
+                <p>This is a protected area. Only authenticated users can access this page.</p>
+                <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
