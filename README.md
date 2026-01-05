@@ -1,6 +1,6 @@
 # 🔐 Secure Login System
 
-A production-ready authentication system built with Flask, featuring industry-standard security practices. Perfect for college engineering projects and GitHub portfolios.
+A production-ready authentication system built with Flask, featuring industry-standard security practices.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Flask](https://img.shields.io/badge/Flask-3.0.0-green.svg)
@@ -215,11 +215,11 @@ This project is for educational purposes only. Use at your own risk.
 
 ## 👨‍💻 Author
 
-**Shrinivas Biradar** 
+**Shrinivas R Biradar** 
 Engineering Student | Portfolio Project  
 [GitHub Profile](https://github.com/shriii257) | [LinkedIn](https://linkedin.com/in/Shriii257)
 
 ---
 
-**⚠️ Disclaimer**: This project is designed for educational purposes and local development. For production deployment, additional security measures are required including HTTPS, email verification, rate limiting, logging, monitoring, and compliance with data protection regulations.
+
 
