@@ -1,7 +1,7 @@
 """
 Secure Login System - Flask Backend
 Author: Engineering Student Portfolio Project
-Description: A security-focused authentication system with session management
+Description: A security focused authentication system with session management
 """
 
 from flask import Flask, render_template, request, redirect, url_for, session, flash
