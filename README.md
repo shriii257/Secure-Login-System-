@@ -1,4 +1,4 @@
-# 🔐 Secure Login System
+🔐 Secure Login System
 
 A production-ready authentication system built with Flask, featuring industry-standard security practices.
 
