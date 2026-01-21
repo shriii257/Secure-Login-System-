@@ -3,7 +3,7 @@
 A production-ready authentication system built with Flask, featuring industry-standard security practices.
 
 
-## 📋 Features
+ 📋 Features
 
 ### Security Features
 - **Password Hashing**: PBKDF2-SHA256 algorithm via Werkzeug
